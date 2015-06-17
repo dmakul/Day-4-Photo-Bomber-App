@@ -46,7 +46,7 @@
             
             [userDefaults synchronize];
             
-            NSLog(@"saved credentials");
+
             
         }];
         [self downloadImages];
@@ -57,8 +57,7 @@
         //download images
         [self downloadImages];
         
-        NSLog(@"using previous credentials");
-        
+
     }
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -86,7 +85,7 @@
         
         NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
         
-        NSLog(@"response is : %@", responseDictionary);
+
         
         self.photos = responseDictionary[@"data"];
         

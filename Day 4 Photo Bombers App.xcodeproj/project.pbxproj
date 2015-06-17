@@ -18,6 +18,8 @@
 		2623E5C51B313FF8008C1597 /* car_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2623E5C41B313FF8008C1597 /* car_image.jpeg */; };
 		263722111B3174B5003AD906 /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263722101B3174B5003AD906 /* PhotoController.m */; };
 		263722141B317B59003AD906 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263722131B317B59003AD906 /* DetailViewController.m */; };
+		2637221A1B31CD3D003AD906 /* PresentDetailTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 263722191B31CD3D003AD906 /* PresentDetailTransition.m */; };
+		2637221D1B31CFF1003AD906 /* dismissDetailTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2637221C1B31CFF1003AD906 /* dismissDetailTransition.m */; };
 		736B39745F1D698E30F7CD4B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F0CC0CE1124A284C94DB74 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,10 @@
 		263722101B3174B5003AD906 /* PhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoController.m; sourceTree = "<group>"; };
 		263722121B317B59003AD906 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		263722131B317B59003AD906 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		263722181B31CD3D003AD906 /* PresentDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentDetailTransition.h; sourceTree = "<group>"; };
+		263722191B31CD3D003AD906 /* PresentDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentDetailTransition.m; sourceTree = "<group>"; };
+		2637221B1B31CFF1003AD906 /* dismissDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dismissDetailTransition.h; sourceTree = "<group>"; };
+		2637221C1B31CFF1003AD906 /* dismissDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dismissDetailTransition.m; sourceTree = "<group>"; };
 		2EC0126D6BB07CA04A60DD37 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		85F0CC0CE1124A284C94DB74 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84DE61A8B577EA86281D704 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,12 +109,16 @@
 				2623E5A01B3139CB008C1597 /* AppDelegate.m */,
 				2623E5A21B3139CB008C1597 /* ViewController.h */,
 				2623E5A31B3139CB008C1597 /* ViewController.m */,
+				2637221B1B31CFF1003AD906 /* dismissDetailTransition.h */,
+				2637221C1B31CFF1003AD906 /* dismissDetailTransition.m */,
 				2637220F1B3174B5003AD906 /* PhotoController.h */,
 				263722101B3174B5003AD906 /* PhotoController.m */,
 				2623E5C11B313CD3008C1597 /* PhotoCollectionViewCell.h */,
 				2623E5C21B313CD3008C1597 /* PhotoCollectionViewCell.m */,
 				263722121B317B59003AD906 /* DetailViewController.h */,
 				263722131B317B59003AD906 /* DetailViewController.m */,
+				263722181B31CD3D003AD906 /* PresentDetailTransition.h */,
+				263722191B31CD3D003AD906 /* PresentDetailTransition.m */,
 				2623E5A51B3139CB008C1597 /* Main.storyboard */,
 				2623E5A81B3139CB008C1597 /* Images.xcassets */,
 				2623E5AA1B3139CB008C1597 /* LaunchScreen.xib */,
@@ -301,7 +311,9 @@
 				2623E5C31B313CD3008C1597 /* PhotoCollectionViewCell.m in Sources */,
 				2623E5A11B3139CB008C1597 /* AppDelegate.m in Sources */,
 				2623E59E1B3139CB008C1597 /* main.m in Sources */,
+				2637221A1B31CD3D003AD906 /* PresentDetailTransition.m in Sources */,
 				263722111B3174B5003AD906 /* PhotoController.m in Sources */,
+				2637221D1B31CFF1003AD906 /* dismissDetailTransition.m in Sources */,
 				263722141B317B59003AD906 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

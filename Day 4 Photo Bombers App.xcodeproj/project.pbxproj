@@ -14,6 +14,8 @@
 		2623E5A91B3139CB008C1597 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2623E5A81B3139CB008C1597 /* Images.xcassets */; };
 		2623E5AC1B3139CB008C1597 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2623E5AA1B3139CB008C1597 /* LaunchScreen.xib */; };
 		2623E5B81B3139CB008C1597 /* Day_4_Photo_Bombers_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2623E5B71B3139CB008C1597 /* Day_4_Photo_Bombers_AppTests.m */; };
+		2623E5C31B313CD3008C1597 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2623E5C21B313CD3008C1597 /* PhotoCollectionViewCell.m */; };
+		2623E5C51B313FF8008C1597 /* car_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2623E5C41B313FF8008C1597 /* car_image.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		2623E5B11B3139CB008C1597 /* Day 4 Photo Bombers AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day 4 Photo Bombers AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2623E5B61B3139CB008C1597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2623E5B71B3139CB008C1597 /* Day_4_Photo_Bombers_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day_4_Photo_Bombers_AppTests.m; sourceTree = "<group>"; };
+		2623E5C11B313CD3008C1597 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		2623E5C21B313CD3008C1597 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		2623E5C41B313FF8008C1597 /* car_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = car_image.jpeg; path = ../../../../car_image.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,8 @@
 				2623E5A01B3139CB008C1597 /* AppDelegate.m */,
 				2623E5A21B3139CB008C1597 /* ViewController.h */,
 				2623E5A31B3139CB008C1597 /* ViewController.m */,
+				2623E5C11B313CD3008C1597 /* PhotoCollectionViewCell.h */,
+				2623E5C21B313CD3008C1597 /* PhotoCollectionViewCell.m */,
 				2623E5A51B3139CB008C1597 /* Main.storyboard */,
 				2623E5A81B3139CB008C1597 /* Images.xcassets */,
 				2623E5AA1B3139CB008C1597 /* LaunchScreen.xib */,
@@ -96,6 +103,7 @@
 		2623E59B1B3139CB008C1597 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2623E5C41B313FF8008C1597 /* car_image.jpeg */,
 				2623E59C1B3139CB008C1597 /* Info.plist */,
 				2623E59D1B3139CB008C1597 /* main.m */,
 			);
@@ -201,6 +209,7 @@
 			files = (
 				2623E5A71B3139CB008C1597 /* Main.storyboard in Resources */,
 				2623E5AC1B3139CB008C1597 /* LaunchScreen.xib in Resources */,
+				2623E5C51B313FF8008C1597 /* car_image.jpeg in Resources */,
 				2623E5A91B3139CB008C1597 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2623E5A41B3139CB008C1597 /* ViewController.m in Sources */,
+				2623E5C31B313CD3008C1597 /* PhotoCollectionViewCell.m in Sources */,
 				2623E5A11B3139CB008C1597 /* AppDelegate.m in Sources */,
 				2623E59E1B3139CB008C1597 /* main.m in Sources */,
 			);

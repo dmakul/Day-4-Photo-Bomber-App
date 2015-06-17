@@ -14,6 +14,7 @@
 @property (nonatomic) UIImageView *imageView;
 @property (nonatomic) UILabel *userLabel;
 @property (nonatomic) UILabel *likeLabel;
+@property (nonatomic) UIDynamicAnimator *animator;
 
 @end
 
@@ -24,9 +25,9 @@
     
     [self.view setBackgroundColor:[UIColor colorWithWhite:1.0 alpha:0.95]];
     
-    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 70, 320.f, 320.f)];
-    self.userLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 200, 100)];
-    self.likeLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 360, 200, 100)];
+    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, -320.f, 320.f, 320.f)];
+    self.userLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 60, 200, 100)];
+    self.likeLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 410, 200, 100)];
     
     self.userLabel.textColor = [UIColor blueColor];
     self.likeLabel.textColor = [UIColor blueColor];
@@ -50,8 +51,25 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    
+    UISnapBehavior *snap = [[UISnapBehavior alloc] initWithItem:self.imageView snapToPoint:self.view.center];
+    
+    [self.animator addBehavior:snap];
+}
+
 -(void) close
 {
+    [self.animator removeAllBehaviors];
+    
+    UISnapBehavior *snap = [[UISnapBehavior alloc] initWithItem:self.imageView snapToPoint:CGPointMake (CGRectGetMidX(self.view.bounds), CGRectGetMaxY(self.view.bounds) + 180.f)];
+    [self.animator addBehavior:snap];
+    
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

@@ -12,7 +12,7 @@
 
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
-    return 0.3;
+    return 0.1;
 }
 
 -(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
@@ -30,7 +30,7 @@
     detailVC.view.frame = frame;
     [containerView addSubview:detailVC.view];
     
-    [UIView animateWithDuration:0.3 animations:^{
+    [UIView animateWithDuration:0.1 animations:^{
         detailVC.view.alpha = 1.0;
     } completion:^(BOOL finished) {
         [transitionContext completeTransition:YES];
